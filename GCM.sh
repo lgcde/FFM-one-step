@@ -255,7 +255,7 @@ done
 #install Mojowx
 for i in $(seq 1 3):
 do
-	cpanm Mojo::Weixin --force
+	cpanm Mojo::Weixin Crypt::OpenSSL::RSA Crypt::OpenSSL::Bignum --force
 	sleep 2s
 done
 
